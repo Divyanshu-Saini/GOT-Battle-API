@@ -3,7 +3,7 @@ const csv = require("csvtojson/v2");
 const mongoose = require('mongoose');
 const GotDoc = require('./models/GotModel');
 
-mongoose.connect('mongodb://localhost:27017/PRDXN', {
+mongoose.connect('mongodb://prdxnuser:prdxn123@ds135812.mlab.com:35812/prdxn', {
     useNewUrlParser: true,
     useUnifiedTopology: true
 });

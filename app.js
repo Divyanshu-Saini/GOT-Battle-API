@@ -1,16 +1,15 @@
-var express = require('express');
-var path = require('path');
-var cookieParser = require('cookie-parser');
-var logger = require('morgan');
+const express = require('express');
+const path = require('path');
+const cookieParser = require('cookie-parser');
+const logger = require('morgan');
 const mongoose = require('mongoose');
 
-var indexRouter = require('./routes/index');
+const indexRouter = require('./routes/index');
 
-var app = express();
+const app = express();
 const URI = process.env.MONGODB_URL;
 
 mongoose.connect(URI, {
-    poolSize: 10000,
     useNewUrlParser: true,
     useUnifiedTopology: true
 });
@@ -18,6 +17,9 @@ mongoose.Promise = global.Promise;
 const db = mongoose.connection;
 
 db.on('error', (error) => console.error(error))
+db.once('open',()=>{
+    console.log('Database connected!');
+})
 
 app.use(logger('dev'));
 app.use(express.json());
