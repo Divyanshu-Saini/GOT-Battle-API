@@ -37,7 +37,7 @@ function setScheme(docs) {
             defender_commander: json.defender_commander,
             summer: parseInt(json.summer),
             location: json.location,
-            regin: json.regin,
+            region: json.region,
             note: json.note,
         });
         arrayOfDoc.push(doc);
