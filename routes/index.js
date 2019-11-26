@@ -38,7 +38,7 @@ router.get('/count', (req, res) => {
     if (!err) {
       totalBattle = count;
       res.json({
-        "Total Number of Battles :": totalBattle
+        totalBattle
       });
     } else {
       res.json({
