@@ -9,8 +9,5 @@ https://got-battle-api-ds.herokuapp.com//list
 # /count
 https://got-battle-api-ds.herokuapp.com/count
 
-# /stats
-https://got-battle-api-ds.herokuapp.com/stats
-
 # /search
 https://got-battle-api-ds.herokuapp.com/search?king=Robb%20Stark&location=Riverrun&type=siege
