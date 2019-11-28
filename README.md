@@ -1,4 +1,4 @@
-# PRDXN-GOT-Battle-API
+# GOT-Battle-API
 # App deployed on heroku
 
 #following are the endpoints
